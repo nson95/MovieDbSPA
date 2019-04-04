@@ -20,10 +20,10 @@ export class MovieService {
     return this.http.post(url +'Add', movie) as Observable<JsonResponse>;
   }
   change(movie: Movie): Observable<JsonResponse> {
-    return this.http.post(url +'Change', +movie) as Observable<JsonResponse>;
+    return this.http.post(url +'Change', movie) as Observable<JsonResponse>;
   }
   remove(movie: Movie): Observable<JsonResponse> {
-    return this.http.post(url +'Remove', +movie) as Observable<JsonResponse>;
+    return this.http.post(url +'Remove', movie) as Observable<JsonResponse>;
   }
   constructor(private http: HttpClient) { }
 }
