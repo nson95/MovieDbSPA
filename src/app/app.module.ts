@@ -14,6 +14,7 @@ import { ActorCreateComponent } from './actor/actor-create/actor-create.componen
 import { ActorListComponent } from './actor/actor-list/actor-list.component';
 import { ActorDetailComponent } from './actor/actor-detail/actor-detail.component';
 import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
+import { MenuComponent } from './menu/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ActorEditComponent } from './actor/actor-edit/actor-edit.component';
     ActorCreateComponent,
     ActorListComponent,
     ActorDetailComponent,
-    ActorEditComponent
+    ActorEditComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
