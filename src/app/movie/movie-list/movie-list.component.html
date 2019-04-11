@@ -1,15 +1,19 @@
 <div>
   <table class="table table-sm">
     <thead>
-      <tr>
+      <tr class='bigger'>
         <td>Title</td>
         <td>Year</td>
+        <td>+</td>
       </tr>
     </thead>
     <tbody *ngIf='movies'>
       <tr *ngFor='let movie of movies'>
         <td>{{ movie.title }}</td>
         <td>{{ movie.year }}</td>
+        <td>
+        <a routerLink='/movies/detail/ {{movie.id}}'>Detail</a>
+        </td>
       </tr>  
     </tbody>
   </table>
