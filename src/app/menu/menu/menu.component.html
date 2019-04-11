@@ -1,7 +1,3 @@
-<nav>
-  <ul>
-    <li *ngFor="let menu of menus" class="nav navbar-nav">
+<nav *ngFor="let menu of menus" class="nav navbar-nav">
       <a routerLink='{{menu.route}}' title="{{menu.title}}">{{menu.display}}</a>
-    </li>
-  </ul>
 </nav>
