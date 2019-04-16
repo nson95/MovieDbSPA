@@ -4,7 +4,7 @@
       <tr class='bigger'>
         <td>Title</td>
         <td>Year</td>
-        <td>+</td>
+        <td>Action</td>
       </tr>
     </thead>
     <tbody *ngIf='movies'>
@@ -13,6 +13,7 @@
         <td>{{ movie.year }}</td>
         <td>
         <a routerLink='/movies/detail/ {{movie.id}}'>Detail</a>
+        <a routerLink='/movies/edit/ {{movie.id}}'>Edit</a>
         </td>
       </tr>  
     </tbody>
